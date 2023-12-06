@@ -1,0 +1,11 @@
+
+{% extends 'base.html' %}
+
+{% block body %}
+<img src="{{football.img.url}}" width="100" height="100">
+{{football.name}}<br>
+{{football.desc}}<br>
+Club: {{football.club}}<br>
+Balon D'or: {{football.bdor}}<br>
+<a class="btn btn-warning" href="{% url 'sportapp:update' football.id %}">update</a>
+{% endblock %}
